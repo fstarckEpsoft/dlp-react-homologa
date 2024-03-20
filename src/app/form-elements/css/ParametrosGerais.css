@@ -1,0 +1,88 @@
+.table-container {
+  font-family: Arial, sans-serif;
+  width: 40vw;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+table {
+  border-collapse: collapse;
+  width: 32vw;
+  margin-top: 20px;
+  border: 1px solid #ccc;
+  justify-content: center;
+}
+
+th,
+td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+  color: black;
+  background-color: #f2f2f2;
+  text-align: center;
+  padding: 8px;
+  width: 20% ;
+}
+
+tr td:first-child {
+  text-align: left;
+}
+
+tr th {
+  font-weight: bold;
+  text-align: center;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.table-input , .table-select {
+  width: 90%;
+  height: 2vw;
+}
+
+
+.table-botoes {
+  padding: 0;
+  width: 30vw;
+  display: flex;
+  align-items:start;
+  gap: 6px;
+}
+
+.table-botoes-salvar {
+  display: flex;
+  gap: 4px;
+  margin-top: 10px;
+  border-radius: 8px;
+  padding: 5px 10px;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.table-botoes-salvar:hover {
+  background-color: #0056b3;
+}
+
+.table-nome-parametro , .table-valor-parametro , .table-titulo-parametro {
+  width: 30vw;
+}
+
+.table-lembre-salvar {
+  color: red;
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 15px;
+}

@@ -1,0 +1,126 @@
+#table-container {
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+table {
+  margin-left: -1vw;
+  border: 1px solid #ccc;
+  width: 100%;
+  border-collapse: collapse;
+
+}
+
+th,
+td {
+  border: 1px solid #ccc;
+  text-align: left;
+  color: black;
+  padding: 1px 5px;
+}
+
+.table-td-select {
+  text-align: center;
+  vertical-align: middle;
+  padding: 1px 4px;
+  
+}
+
+.table-td-input , .table-select-executavel {
+  text-align: left;
+  vertical-align: middle;
+  padding: 1px 4px;
+  width: 150px;
+  
+}
+
+
+th {
+  text-align: center;
+  padding: 8px;
+  font-weight: bold;
+}
+
+input {
+  max-width: 170px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  height: 35px;
+}
+
+select {
+  height: 35px;
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #FaFaFa;
+}
+
+select:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 0.table-2rem rgba(0, 123, 255, 0.table-25);
+}
+
+.table-bt-del {
+  background-color: transparent;
+  border: none;
+  font-size: 24px;
+}
+
+.table-bt-acoes {
+  display: flex;
+  justify-content: center;
+}
+
+.table-botoes {
+  padding: 0;
+  width: 50vw;
+  display: flex;
+  align-items:start;
+  gap: 6px;
+}
+
+.table-botoes-salvar {
+  display: flex;
+  gap: 4px;
+  margin-top: 10px;
+  border-radius: 8px;
+  padding: 5px 10px;
+  background-color: #007bff;
+  border: none;
+  color: white;
+}
+
+.table-botoes-salvar:hover {
+  background-color: #0056b3;
+}
+
+.table-grupo-ativo {
+  display: flex;
+  width: 75vw;
+  justify-content: left;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.table-grupo-ativo label {
+  width: 14vw;
+  white-space: nowrap;
+  flex-wrap: nowrap;
+}
+
+.table-grupo-ativo select {
+  width: 15vw;
+}
+
+.table-lembre-salvar {
+  margin-left: 15px;
+  color: red;
+  font-size: 20px;
+  font-weight: bold;
+}

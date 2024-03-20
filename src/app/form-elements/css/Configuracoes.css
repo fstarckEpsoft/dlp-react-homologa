@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.div-menuinicial {
+  align-items: center;
+}
+
+.table-container {
+  font-family: Arial, sans-serif;
+  height: 33vw;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.table-botao {
+  background-color: #007bff;
+  color: white;
+  border-radius: 8px;
+  padding: 4px;
+  margin: 10px 10px;
+  border: none;
+  height: 100px !important;
+  width: 200px !important;
+  text-align: center !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  transition: background-color 0.table-3s, box-shadow 0.table-3s;
+  text-decoration: none !important;
+}
+
+.table-botao:hover {
+  background-color: #0056b3; 
+  text-decoration: none !important;
+}
+
+.table-botao:active {
+  background-color: #003f80; 
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.table-3); 
+}
+
+.table-botoes {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px !important;
+  flex-wrap: wrap-reverse;
+}
+
+.table-existente , .table-novo {
+  width: 400px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  margin: 8px;
+  gap: 10px;
+} 
+
+select {
+  padding: 10px; 
+  border: 1px solid #ccc;
+  border-radius: 4px; 
+  background-color: #fff; 
+  width: 15vw;
+}
+
+select:focus {
+  outline: none; 
+  border-color: #007bff; 
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.table-5); 
+}
+
+label {
+  width: 150px;
+  text-align: right;
+  margin: 0;
+  padding: 0;
+}
