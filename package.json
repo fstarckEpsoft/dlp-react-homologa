@@ -90,7 +90,7 @@
     "typicons.font": "^2.0.9"
   },
   "scripts": {
-    "start": "set PORT=3003 && PORT=3003 react-scripts start || react-scripts start && node ./server",
+    "start": "set PORT=3003222 && PORT=3003222 react-scripts start || react-scripts start && node ./server",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
