@@ -30,7 +30,7 @@ jobs:
             - name: Homologa Deployment
               uses: easingthemes/ssh-deploy@main
               with:
-                SSH_PRIVATE_KEY: ${{secrets.KEY_SECRETORIGINAL}}
+                SSH_PRIVATE_KEY: ${{secrets.KEY_VM_REACT}}
                 #ARGS: "-rlgoDzvc --delete"
                 SOURCE: "./"
                 REMOTE_HOST: ${{vars.REMOTE_HOST}}
