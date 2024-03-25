@@ -11,14 +11,14 @@ const rl = readline.createInterface({
 function exibirOpcoes() {
   const opcoes = [
     'HOMOLOGACAO',
-    'HOMOLOGACAO2',
-    'PRODUCAO',
+    //'HOMOLOGACAO2',
+    //'PRODUCAO',
     'PRODUCAO1',
     'PRODUCAO2',
-    'DISCOVERYSCAN',
+    //'DISCOVERYSCAN',
     'POC',
     'WEBINAR',
-    'DOCKER'
+    //'DOCKER'
   ];
 
   const pergunta = [
