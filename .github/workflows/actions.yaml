@@ -1,0 +1,40 @@
+name: "CI (Atualização REACT Homologa 3003): GitAction"
+on:
+    # Triggers the workflow on push or pull request events but only for the "main" branch
+    # Ativa esse fluxo de trabalho para cada push que acontecer apontando para a branch main
+    push:
+      branches: [ "main" ]
+    pull_request:
+      branches: [ "main" ]
+
+    workflow_dispatch:
+
+jobs:
+    homologacao: 
+      runs-on: ubuntu-latest
+      steps:
+            - uses: actions/checkout@v3
+            
+            # Runs a single command using the runners shell
+            - name: Run a one-line script
+              run: echo Hello, world!
+    
+    deploy-homologa:
+      runs-on: ubuntu-latest
+      environment:
+              name: homologa
+      needs: homologacao
+      steps:
+            - name: Repo Checkout
+              uses: actions/checkout@v3
+            - name: Homologa Deployment
+              uses: easingthemes/ssh-deploy@main
+              with:
+                SSH_PRIVATE_KEY: ${{secrets.KEY_SECRETORIGINAL}}
+                #ARGS: "-rlgoDzvc --delete"
+                SOURCE: "./"
+                REMOTE_HOST: ${{vars.REMOTE_HOST}}
+                REMOTE_USER: ${{vars.REMOTE_USER}}
+                REMOTE_PORT: ${{vars.REMOTE_PORT}}
+                TARGET: ${{vars.TARGET}}
+
