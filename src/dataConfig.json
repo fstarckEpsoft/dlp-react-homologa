@@ -5,6 +5,6 @@
   "porta_localhost": "8088",
   "ambiente_end": "AWSSERVERDEV",
   "porta": "8088",
-  "porta_react": "3003222",
+  "porta_react": "3003",
   "porta_api": "5003"
 }
