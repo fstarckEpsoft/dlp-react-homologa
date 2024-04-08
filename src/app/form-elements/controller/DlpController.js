@@ -1,4 +1,4 @@
-﻿import http from "../http/http";
+import http from "../http/http";
 import apiJson from 'axios';
 import { TEXT } from "react-dnd-html5-backend/lib/NativeTypes";
 import BasicElements from "../BasicElements";
@@ -13,8 +13,7 @@ let porta_api = dataConfig.porta_api;
 let endereco_localhost = dataConfig.endereco_localhost;
 let porta_localhost = dataConfig.porta_localhost;
 
-//Versão homologa 240219.1600
-const versao = '240320.1600';
+const versao = '240408.1557';
 
 console.log("%c Versão Front REACT: " + versao + " do ambiente " + ambiente_end, "color: black ; background-color: #00ff0085 ; font-weight: bold")
 

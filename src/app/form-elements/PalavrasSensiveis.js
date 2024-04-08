@@ -83,6 +83,11 @@ const PalavrasSensiveisTable = () => {
 
         setIsModalSave(false);
 
+        const todosValoresDiferentesDeVazio = data.every(objeto =>
+            Object.values(objeto).every(valor => typeof valor === 'string' && valor.trim() !== "")
+        );
+
+        if (todosValoresDiferentesDeVazio){
         const dadosCoding = JSON.stringify(data);
         const utf8Bytes = new TextEncoder().encode(dadosCoding);
         const codificaV64Sensiveis = btoa(String.fromCharCode(...utf8Bytes));
@@ -125,6 +130,19 @@ const PalavrasSensiveisTable = () => {
                 theme: "light",
             });
         }
+    } else {
+        toast.error(`Por favor, preencha todos os campos.`, {
+            position: "top-right",
+            autoClose: 3000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "light",
+        });
+    } 
+
         setIsModified(false);
     };
 
@@ -294,7 +312,6 @@ const PalavrasSensiveisTable = () => {
                 }
                 DlpController.postGrupoDLP(payload)
                 try {
-                    console.log("postei sai correndo")
                     setTimeout(() => {
                         window.location.reload(true)
                     }, 500);
