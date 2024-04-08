@@ -312,7 +312,6 @@ const PalavrasSensiveisTable = () => {
                 }
                 DlpController.postGrupoDLP(payload)
                 try {
-                    console.log("postei sai correndo")
                     setTimeout(() => {
                         window.location.reload(true)
                     }, 500);

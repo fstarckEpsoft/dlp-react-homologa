@@ -1,9 +1,9 @@
 /* * {
   outline: 1px solid red;
-} 
- */
+} */
+
 .container {
-  font-family: Arial, sans-serif;
+  font-family: "Courier Prime", sans-serif !important;
   width: 50vw;
   margin: 0 auto;
   padding: 20px;
@@ -14,6 +14,123 @@
   flex-direction: column;
   align-items: center;
 }
+
+.cabecalho h1 {
+  color: #ddd;
+  font-size: 2em;
+  margin: 5vh 0;
+  font-family: "Courier Prime", sans-serif !important;
+}
+
+.background {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.95);
+  z-index: 100000;
+}
+
+.dividerAdm {
+  width: 90vw;
+  height: 3px;
+  border-radius: 1.5px;
+  background-color: #ddd;
+  border: none;
+  margin-top: -3vh;
+  margin-bottom: 3vh;
+}
+
+.botoes {
+  padding: 0;
+  width: 50vw;
+  display: flex;
+  align-items: start;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.botao-funcao {
+  font-weight: 500;
+  font-size: 30px;
+  color: #dddeee;
+  background-color: #3D94F6;
+  height: 80px;
+  width: 350px;
+  border: solid #0066cc 2px;
+  box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+  border-radius: 23px;
+  transition: 1000ms;
+  transform: translateY(0);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+  margin: 1vw;
+  justify-content: center;
+  color: #ddd;
+}
+
+.botao-funcao:hover {
+  transition: 500ms;
+  background-color: #014d99;
+  border: solid 2px #0066cc;
+}
+
+
+.input-vars {
+  margin: -6vh 0 0 0;
+  color: #ddd;
+  min-width: 400px;
+}
+
+.input-vars22 {
+  color: #ddd;
+  margin: 7px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-vars p {
+  color: #ddd;
+  display: flex;
+  justify-content: center;
+}
+
+.input-vars label {
+  font-size: 0.6em;
+  color: #ddd;
+  margin-bottom: 0;
+}
+
+.input-vars input[type="text"],
+select {
+  width: 100%;
+  font-size: 0.6em;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.box-inputs {
+  display: flex;
+  gap: 3vw;
+  margin-top: 5vh;
+
+}
+
+
+
+
+
 
 table {
   border-collapse: collapse;
@@ -42,22 +159,9 @@ tr th {
   text-align: center;
 }
 
-h1 {
-  font-size: 24px;
-  margin-bottom: 20px;
-}
-
-.botoes {
-  padding: 0;
-  width: 40vw;
-  display: flex;
-  align-items:start;
-  justify-content: center;
-  gap: 6px;
-}
 
 .botoes-salvar {
-  margin-top: 10px;
+  margin: 10px;
   border-radius: 8px;
   padding: 5px 10px;
   background-color: #007bff;
@@ -70,43 +174,40 @@ h1 {
   background-color: #0056b3;
 }
 
-input , select {
+input,
+select {
   width: 100%;
   height: 28px;
   border: none;
-  padding-left: 8px;;
+  padding-left: 8px;
 }
 
-.modal-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 100000;
-}
 
 .modal-find-opcoes-tabela {
   position: fixed !important;
   margin-left: auto;
   margin-right: auto;
-  top: 15vh;
-  left: 12vw;
+  top: 6vh;
+  left: 2vw;
   right: 0;
   color: #000;
-  width: 50vw;
-  height: auto;
+  width: 70vw;
+  height: 88vh;
   padding: 20px;
   border-radius: 8px;
-  border: solid 2px #d9d9d9;
-  background-color: #ffffff;
+  border: solid 2px #2c2c2c;
+  background-color: #323232;
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  h1 {
+    color: #ddd;
+    font-size: 1.2em;
+    font-family: "Courier Prime", sans-serif !important;
+    width: 100%;
+    margin: 0;
+  }
 }
 
 .selects-linha {
@@ -124,27 +225,9 @@ input , select {
 .tabelas-dados table {
   width: auto;
 }
+
 .tabelas-dados {
   display: flex;
   gap: 20px;
   width: auto;
-}
-
-.cabecalho {
-  display: flex;
-  margin: 0;
-  margin-bottom: 20px;
-  padding: 0;
-  gap: 10px;
-  justify-content: center;
-  align-items: center;
-}
-
-.cabecalho h1 {
-  margin: 0;
-  padding: 0;
-}
-
-.cabecalho button {
-  margin-bottom: 5px;
 }

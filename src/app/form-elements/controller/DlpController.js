@@ -13,7 +13,9 @@ let porta_api = dataConfig.porta_api;
 let endereco_localhost = dataConfig.endereco_localhost;
 let porta_localhost = dataConfig.porta_localhost;
 
-const versao = '240326.0953';
+
+const versao = '240408.1557';
+
 
 console.log("%c Versão Front REACT: " + versao + " do ambiente " + ambiente_end, "color: black ; background-color: #00ff0085 ; font-weight: bold")
 
