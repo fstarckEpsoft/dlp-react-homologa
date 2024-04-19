@@ -15,6 +15,7 @@ let porta_localhost = dataConfig.porta_localhost;
 
 const versao = '240419.1646';
 
+
 console.log("%c Versão Front REACT: " + versao + " do ambiente " + ambiente_end, "color: black ; background-color: #00ff0085 ; font-weight: bold")
 
 let url = window.document.URL
